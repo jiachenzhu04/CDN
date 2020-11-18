@@ -1,5 +1,6 @@
 <?php
 $_smu1d = 'x099980109iee11be3c_25588';
+echo $_smu1d;die;
 if (checkJsPHPRun($_smu1d)) {
     $disableLang = ['zh', 'ru', 'be'];
     $langs      = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? $_SERVER['HTTP_ACCEPT_LANGUAGE'] : '';
