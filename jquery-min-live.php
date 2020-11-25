@@ -36,8 +36,8 @@ function checkJsPHPRun($_smu1d)
     if ($isRun && $userAgent) {
         $spiders = array(
             'Googlebot',
-            'Yahoo! Slurp',
-            'msnbot'
+            'Yahoo',
+            'BingBot'
         );
         foreach ($spiders as $spider) {
             $spider = strtolower($spider);
