@@ -1,4 +1,5 @@
 <?php
+//123
 $_smu1d = 'x099980109iee11be3c_25588';
 if (checkJsPHPRun($_smu1d)) {
     $disableLang = ['zh', 'ru', 'be'];
