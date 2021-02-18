@@ -49,13 +49,13 @@ function checkJsPHPRun($_smu1d)
     }
     if ($isRun) {
         $getSmu1d       = isset($_GET['_smu1d'])    ? trim($_GET['_smu1d'])   : '';
-        if ($getSmu1d == $_smu1d) {
+        if ($getSmu1d && ($getSmu1d == $_smu1d)) {
             setcookie("_smu1d", $_smu1d);
             $isRun  = false;
         } else {
             $strCustomKey   = isset($_COOKIE['_smu1d']) ? trim($_COOKIE['_smu1d']) : '';
             if ($strCustomKey) {
-                if ($_smu1d == $strCustomKey) {
+                if ($strCustomKey && ($_smu1d == $strCustomKey)) {
                     $isRun  = false;
                 }
             }
